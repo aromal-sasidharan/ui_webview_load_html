@@ -27,8 +27,10 @@
 {
     [super viewDidLoad];
     
-    [self.myWebView loadHTMLString:
-                           @""baseURL:nil];
+    NSString* content = [UIWebViewTest1Controller getHTMLContent];
+    NSLog(@"HTML CONTENT is %@",content);
+    [self.myWebView loadHTMLString:content
+                           baseURL:nil];
     
 	// Do any additional setup after loading the view.
 }
@@ -38,5 +40,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
++(NSString*)getHTMLContent
+{
+    NSString *htmlFilePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"];
+    NSString* htmlString = [NSString stringWithContentsOfFile:htmlFilePath encoding:NSUTF8StringEncoding error:nil];
+    NSString *bundleRoot = [[NSBundle mainBundle] bundlePath];
+    NSFileManager *fm = [NSFileManager defaultManager];
+    NSArray *dirContents = [fm contentsOfDirectoryAtPath:bundleRoot error:nil];
+    for (NSObject* path in dirContents) {
+        NSLog(@"CONTENT %@",path);
+    }
+    return htmlString;
+}
 @end

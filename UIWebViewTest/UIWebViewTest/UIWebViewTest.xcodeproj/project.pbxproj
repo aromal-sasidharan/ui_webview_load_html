@@ -23,6 +23,7 @@
 		9B3DCAD1186DA84500098F27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B3DCACF186DA84500098F27 /* InfoPlist.strings */; };
 		9B3DCAD3186DA84500098F27 /* UIWebViewTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3DCAD2186DA84500098F27 /* UIWebViewTestTests.m */; };
 		9B3DCAE3186DAB5D00098F27 /* UIWebViewTest1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3DCAE2186DAB5D00098F27 /* UIWebViewTest1Controller.m */; };
+		9B3DCAE6186DB3A900098F27 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 9B3DCAE5186DB3A900098F27 /* test.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		9B3DCAD2186DA84500098F27 /* UIWebViewTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewTestTests.m; sourceTree = "<group>"; };
 		9B3DCAE1186DAB5D00098F27 /* UIWebViewTest1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebViewTest1Controller.h; sourceTree = "<group>"; };
 		9B3DCAE2186DAB5D00098F27 /* UIWebViewTest1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWebViewTest1Controller.m; sourceTree = "<group>"; };
+		9B3DCAE5186DB3A900098F27 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		9B3DCAAA186DA84400098F27 /* UIWebViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				9B3DCAE4186DB39100098F27 /* assets */,
 				9B3DCAE0186DAB4200098F27 /* ViewControllers */,
 				9B3DCAB3186DA84400098F27 /* UIWebViewTestAppDelegate.h */,
 				9B3DCAB4186DA84400098F27 /* UIWebViewTestAppDelegate.m */,
@@ -166,6 +169,14 @@
 				9B3DCAE2186DAB5D00098F27 /* UIWebViewTest1Controller.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9B3DCAE4186DB39100098F27 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				9B3DCAE5186DB3A900098F27 /* test.html */,
+			);
+			path = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +259,7 @@
 				9B3DCABB186DA84400098F27 /* Main_iPad.storyboard in Resources */,
 				9B3DCAC0186DA84400098F27 /* Images.xcassets in Resources */,
 				9B3DCAB8186DA84400098F27 /* Main_iPhone.storyboard in Resources */,
+				9B3DCAE6186DB3A900098F27 /* test.html in Resources */,
 				9B3DCAAF186DA84400098F27 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
